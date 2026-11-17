@@ -1,0 +1,229 @@
+:root{
+  --blush:#D8A6A5;
+  --light:#EAD8D0; 
+  --bg:#FDF7F4;
+  --rose:#D8A6A5; 
+  --burg:#554343; 
+  --burg2:#6B5454; 
+  --text:#554343
+}
+body{
+background:var(--bg);
+color:var(--text);
+font-family:'Plus Jakarta Sans',sans-serif;
+overflow-x:hidden
+}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;
+    color:var(--burg)
+}
+.navbar{background:rgba(255,249,248,0.92);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--blush);
+    padding:12px 0
+}
+.navbar-brand{
+    font-family:'Cormorant Garamond';
+    font-weight:700;
+    font-size:26px;
+    color:var(--burg)!important
+}
+.btn-burg{
+    background:var(--burg);
+    color:#fff;
+    border-radius:30px;
+    padding:10px 22px;
+    font-size:13px;
+    border:none;
+    transition:.3s;
+    text-decoration:none;
+    display:inline-block
+}
+.btn-burg:hover{
+    background:var(--burg2);
+    color:#fff;
+    transform:translateY(-1px)
+}
+.page-header{
+    background:linear-gradient(135deg,#FDF7F4,#EAD8D0);
+padding:60px 0 30px;
+border-bottom:1px solid var(--blush)
+}
+.page-header h1{
+    font-size:48px;
+    line-height:1
+}
+.page-header p{
+    opacity:.7;
+    max-width:500px;
+    margin-top:12px;
+    font-size:14px;
+    line-height:1.6
+}
+.doctors-container{
+    max-width:1160px;
+    margin:-20px auto 60px;
+    background:#fff;
+    border-radius:28px;
+    padding:28px;
+    box-shadow:0 18px 60px rgba(100,31,53,0.08);
+    border:1px solid var(--blush);
+    position:relative;
+    z-index:2
+}
+.header-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px
+}
+.view-all{
+    font-size:13px;
+    color:var(--burg);
+    text-decoration:none;
+    border-bottom:1px solid var(--burg);
+    font-weight:500
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:20px 0;
+    padding-bottom:18px;
+    border-bottom:1px solid var(--light)
+}
+.filter-select{
+    border:1.5px solid var(--blush);
+    border-radius:30px;
+    padding:8px 16px;
+    font-size:12px;
+    background:var(--bg);
+    color:var(--burg);
+    min-width:140px;
+    outline:none
+}
+.search-box{
+    border:1.5px solid var(--blush);
+    border-radius:30px;
+    padding:8px 16px;
+    font-size:12px;
+    background:var(--bg);
+    flex:1;
+    max-width:260px;
+    outline:none
+}
+.doctor-card{
+    background:#fff;
+    border-radius:20px;
+    padding:0 0 16px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid transparent
+}
+.doctor-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(100,31,53,0.08);
+    border-color:var(--blush)
+}
+.doctor-img{
+    width:100%;
+    aspect-ratio:0.85;
+    background:var(--light);
+    border-radius:140px 140px 18px 18px;
+    overflow:hidden;
+    position:relative
+}
+.doctor-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    transition:.5s
+}
+.doctor-card:hover .doctor-img img{
+    transform:scale(1.04)
+}
+.badge-exp{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    border:1px solid var(--blush);
+    border-radius:30px;
+    font-size:10px;
+    padding:4px 12px;
+    white-space:nowrap;
+    color:var(--burg);
+    box-shadow:0 2px 10px rgba(0,0,0,0.06)
+}
+
+.doctor-info{
+    padding:14px 10px 0
+}
+.doctor-info h6{
+    font-size:14.5px;
+    font-weight:600;
+    color:var(--burg);
+    line-height:1.25;
+    margin:0;
+    min-height:36px
+}
+.doctor-info .specialty{
+    font-size:11.5px;
+    opacity:.6;
+    margin:6px 0 4px;
+    line-height:1.3;
+    min-height:32px
+}
+.doctor-meta{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:8px;
+    font-size:10.5px;
+    flex-wrap:wrap
+}
+.meta-item{
+    background:var(--bg);
+    border:1px solid var(--light);
+    border-radius:20px;
+    padding:3px 8px;
+    color:var(--burg2)
+}
+.btn-book{
+    margin-top:12px;
+    background:var(--bg);
+    border:1.5px solid var(--blush);
+    border-radius:30px;
+    font-size:11px;
+    padding:7px 18px;
+    color:var(--burg);
+    width:85%;
+    transition:.3s;
+    cursor:pointer
+}
+.btn-book:hover{
+    background:var(--burg);
+    color:#fff;
+    border-color:var(--burg)
+}
+.rating{
+    font-size:11px;
+    color:#554343;
+    margin-top:6px
+}
+
+@media(max-width:768px){
+  .doctors-container{margin:0 12px 30px;
+    padding:16px;
+    border-radius:20px
+}
+  .page-header h1{
+    font-size:34px
+}
+  .doctor-img{
+    border-radius:110px 110px 14px 14px
+}
+}
