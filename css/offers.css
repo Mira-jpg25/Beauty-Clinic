@@ -1,0 +1,102 @@
+body{
+  background:#FDF7F4;
+  font-family:'Plus Jakarta Sans', Arial, sans-serif;
+  color:#554343;
+}
+h1,h2,h3{
+  font-family:'Cormorant Garamond', serif;
+  color:#554343;
+}
+.navbar{
+  background:#FDF7F4 !important;
+  padding:18px 0;
+}
+.navbar-brand{
+  font-family:'Cormorant Garamond', serif;
+  font-weight:700;
+  font-size:26px;
+  color:#554343 !important;
+}
+.nav-link{
+  color:#554343 !important;
+  font-size:14px;
+  margin:0 6px;
+}
+.nav-link.active{
+  font-weight:700;
+  border-bottom:2px solid #D8A6A5;
+}
+.btn-dark-custom{
+  background:#554343;
+  color:#fff;
+  border:none;
+  border-radius:30px;
+  padding:10px 22px;
+}
+.btn-dark-custom:hover{
+  background:#D8A6A5;
+  color:#554343;
+}
+.hero-offers{
+  background:#EAD8D0;
+  border-radius:28px;
+  padding:50px 40px;
+  margin-top:20px;
+}
+.hero-small{
+  letter-spacing:3px;
+  color:#8a6b6b;
+}
+.hero-offers h1{
+  font-size:48px;
+  line-height:1.1;
+  margin:12px 0;
+}
+.gift-icon{
+  font-size:90px;
+}
+.offer-card{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid #EAD8D0;
+  height:100%;
+}
+.offer-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.offer-body{
+  padding:22px;
+}
+.badge-off{
+  background:#D8A6A5;
+  color:#554343;
+  border-radius:20px;
+  padding:6px 14px;
+  font-size:12px;
+  font-weight:700;
+}
+.price-old{
+  text-decoration:line-through;
+  color:#999;
+}
+.price-new{
+  font-size:22px;
+  font-weight:800;
+  color:#554343;
+}
+.filter-btn{
+  border:1px solid #554343;
+  background:transparent;
+  border-radius:20px;
+  padding:7px 18px;
+  margin:4px;
+  color:#554343;
+}
+.filter-btn.active,
+.filter-btn:hover{
+background:#554343;
+color:#fff;
+}

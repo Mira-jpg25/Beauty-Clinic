@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/offers.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Beauty Clinic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services & Prices</a></li>
+        <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link active" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-2"><a href="booking.html" class="btn btn-dark-custom btn-sm">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container pb-5">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero-offers d-flex justify-content-between align-items-center flex-wrap">
+    <div style="max-width:650px">
+      <small class="hero-small">SPECIAL OFFERS</small>
+      <h1>A Little More Beauty,<br>A Little More You!</h1>
+      <p>Discover our latest beauty offers and enjoy special experiences at Beauty Clinic.</p>
+      <a href="#all-offers" class="btn btn-dark-custom">Explore Offers →</a>
+    </div>
+    <div class="gift-icon"></div>
+  </div>
+
+  <!-- ===== FILTERS ===== -->
+  <div class="text-center my-4">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="laser">Laser</button>
+    <button class="filter-btn" data-filter="skin">Skin Care</button>
+    <button class="filter-btn" data-filter="botox">Botox & Filler</button>
+  </div>
+
+  <!-- ===== OFFERS GRID ===== -->
+  <div class="row g-4" id="all-offers">
+
+    <div class="col-md-4 offer-item" data-cat="laser">
+      <div class="offer-card">
+        <img src="./images/laser.jpg" onerror="this.src='https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600'">
+        <div class="offer-body">
+          <span class="badge-off">-30% OFF</span>
+          <h3>Laser Hair Removal</h3>
+          <p>Full Body - 6 Sessions. Painless & fast.</p>
+          <p><span class="price-old">6000 EGP</span> <span class="price-new">4200 EGP</span></p>
+          <a href="booking.html?offer=Laser Hair Removal" class="btn btn-dark-custom w-100">Book This Offer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 offer-item" data-cat="skin">
+      <div class="offer-card">
+        <img src="./images/facial.jpg" onerror="this.src='https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600'">
+        <div class="offer-body">
+          <span class="badge-off">Buy 1 Get 1</span>
+          <h3>HydraFacial Glow</h3>
+          <p>Deep cleansing + hydration + glow.</p>
+          <p><span class="price-old">1500 EGP</span> <span class="price-new">750 EGP</span></p>
+          <a href="booking.html?offer=HydraFacial Glow" class="btn btn-dark-custom w-100">Book This Offer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 offer-item" data-cat="botox">
+ <div class="offer-card">
+        <img src="./images/botox.jpg" onerror="this.src='https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600'">
+        <div class="offer-body">
+          <span class="badge-off">-20% OFF</span>
+          <h3>Botox + Filler Combo</h3>
+          <p>Natural look with Dr. Jouli Johne.</p>
+          <p><span class="price-old">8000 EGP</span> <span class="price-new">6400 EGP</span></p>
+          <a href="booking.html?offer=Botox + Filler Combo" class="btn btn-dark-custom w-100">Book This Offer</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="offers.js"></script>
+</body>
+</html>
