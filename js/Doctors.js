@@ -56,3 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('Beauty Clinic - Doctors page loaded. Total doctors:', doctorItems.length);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openLogin = document.getElementById("openLogin");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (currentUser) {
+      // 1. إذا كان هناك مستخدم مسجل، حوّل الزر إلى Logout
+      openLogin.textContent = "Logout";
+      openLogin.href = "#"; // إلغاء الذهاب لصفحة اللوجين
+
+      // 2. عند الضغط على Logout
+      openLogin.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+        // مسح بيانات المستخدم المسجل
+        localStorage.removeItem("currentUser");
+        
+        // إعادة الزر لحالته الأصلية أو تحديث الصفحة
+        openLogin.textContent = "Login";
+        openLogin.href = "login.html";
+        window.location.reload(); // تحديث الصفحة لتأكيد الخروج
+      });
+    } else {
+      // إذا لم يكن هناك مستخدم مسجل
+      openLogin.textContent = "Login";
+      openLogin.href = "login.html";
+    }
+  });
