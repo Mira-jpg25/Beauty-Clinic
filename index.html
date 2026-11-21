@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Clinic</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="header">
+
+        <h2>Beauty Clinic</h2>
+
+        <div class="nav">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="booking.html">Booking</a>
+            <!-- <a href="#about">About</a> --><a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./doctors.html">Doctors</a>
+            <a href="./booking.html">Booking</a>
+             <button class="login-btn" id="openLogin" onclick="window.location.href='./login.html'">Login</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Hero Section -->
+
+    <div class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Glow Beautifully Feel Confident</h1>
+
+            <p>Your beauty, our care</p>
+
+            <button>Book Now</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+
+    <div class="about" id="about">
+
+        <div class="about-image">
+
+            <img src="./images/image3.jpg" alt="Beauty Clinic">
+
+        </div>
+
+        <div class="about-content">
+
+            <h2>About Our Clinic</h2>
+
+            <p>
+                We are a modern beauty clinic dedicated to enhancing
+                your natural beauty with the latest skincare and
+                aesthetic treatments.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Services Section -->
+
+    <div class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <p class="services-text">
+            Discover our beauty and skincare treatments.
+        </p>
+
+        <div class="service-cards">
+
+            <div class="service-card">
+
+                <img src="./images/A1.jpg" alt="Skin Care">
+
+                <h3>Skin Care</h3>
+
+                <p>
+                    Professional skincare treatments for healthy skin.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="./images/A3.jpg" alt="Facial Treatment">
+
+                <h3>Facial Treatment</h3>
+
+                <p>
+                    Refresh your skin with our facial treatments.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="./images/A2.jpg" alt="Laser Treatment">
+
+                <h3>Laser Treatment</h3>
+
+                <p>
+                    Advanced treatments for smooth and beautiful skin.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Doctors Section -->
+
+    <div class="doctors" id="doctors">
+
+        <h2>Meet Our Doctors</h2>
+
+        <p class="doctors-text">
+            Our professional team is here to care for your beauty.
+        </p>
+
+        <div class="doctor-cards">
+
+            <div class="doctor-card">
+
+                <img src="./images/dr3.jpg" alt="Doctor">
+
+                <h3>Dr. Manar Ahmad</h3>
+
+                <p>Skin Care Specialist</p>
+
+            </div>
+
+            <div class="doctor-card">
+
+                <img src="./images/dr1.jpg" alt="Doctor">
+
+                <h3>Dr. jouli johne</h3>
+
+                <p>Dermatology Specialist</p>
+
+            </div>
+
+            <div class="doctor-card">
+
+                <img src="./images/dr5.jpg" alt="Doctor">
+
+                <h3>Dr.Yulia Mitroshina</h3>
+
+                <p>Beauty Specialist</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Booking Section -->
+
+    <div class="booking" id="booking">
+
+        <h2>Book Your Appointment</h2>
+
+        <p>
+            Make an appointment and let us take care of your beauty.
+        </p>
+
+        <form class="booking-form" id="bookingForm">
+
+            <input type="text" id="userName"
+            placeholder="Your Name" required>
+
+            <input type="email" id="userEmail"
+            placeholder="Your Email" required>
+
+            <input type="tel" id="userPhone"
+            placeholder="Your Phone" required>
+
+            <select id="service" required>
+
+                <option value="">Select Service</option>
+
+                <option value="Skin Care">Skin Care</option>
+
+                <option value="Facial Treatment">Facial Treatment</option>
+
+                <option value="Laser Treatment">Laser Treatment</option>
+
+            </select>
+
+            <input type="date" id="bookingDate" required>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <h2>Beauty Clinic</h2>
+
+        <p>Your beauty, our care.</p>
+
+        <p>Email: info@beautyclinic.com</p>
+
+        <p>Phone: 01000000000</p>
+
+        <p>© 2026 Beauty Clinic. All Rights Reserved.</p>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

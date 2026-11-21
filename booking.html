@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Beauty Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">🌸 Beauty Clinic</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="appointments.html">My Appointments</a>
+        </div>
+
+        <a href="booking.html" class="nav-btn">Book Now</a>
+    </nav>
+
+
+    <!-- Booking Section -->
+    <section class="booking-container">
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+
+            <h1>Book Your Appointment</h1>
+            <p class="form-subtitle">
+                Fill in your information to book your visit.
+            </p>
+
+            <form id="bookingForm">
+
+                <!-- Step One -->
+                <div id="stepOne">
+
+                    <div class="form-group">
+                        <label for="customerName">Full Name</label>
+                        <input type="text" id="customerName"
+                            placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age"
+                            placeholder="Enter your age"
+                            min="1" max="120" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                            placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone"
+                            placeholder="01XXXXXXXXX"
+                            pattern="01[0-9]{9}"
+                            maxlength="11" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Choose Service</label>
+
+                        <select id="service" required>
+                            <option value="">Select Service</option>
+                            <option value="Facial Care">Facial Care</option>
+                            <option value="Body Care">Body Care</option>
+                            <option value="Hair Care">Hair Care</option>
+                            <option value="Laser Treatment">Laser Treatment</option>
+                            <option value="Skin Treatment">Skin Treatment</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="main-btn"
+                        id="nextBtn">
+                        Next Step →
+                    </button>
+
+                </div>
+
+
+                <!-- Step Two -->
+                <div id="stepTwo" class="hidden">
+
+                    <h2 class="step-title">Appointment Details</h2>
+
+                    <div class="form-group">
+                        <label for="doctor">Choose Doctor</label>
+
+                        <select id="doctor" required>
+                            <option value="">Select Doctor</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Service Price</label>
+                        <input type="text" id="price" readonly
+                            placeholder="Price will appear here">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Choose Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Choose Time</label>
+
+                        <select id="time" required>
+                            <option value="">Select Time</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="02:00 PM">02:00 PM</option>
+                            <option value="04:00 PM">04:00 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <input type="text" value="Cash at Clinic" readonly>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="back-btn"
+                            id="backBtn">
+                            ← Back
+                        </button>
+
+                        <button type="submit" class="main-btn">
+                            Confirm Booking
+                        </button>
+                    </div>
+
+                </div>
+
+                <p id="message" class="message"></p>
+
+            </form>
+        </div>
+
+
+        <!-- Image Side -->
+        <div class="booking-image">
+            <div class="image-text">
+                <h2>Beauty Begins Here</h2>
+                <p>Take care of yourself. You deserve it.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

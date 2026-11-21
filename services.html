@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Clinic | Services</title>
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BEAUTY<span>CLINIC</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="booking.html">Booking</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tag">BEAUTY • CARE • CONFIDENCE</p>
+            <h1>Discover Your <span>Natural Beauty</span></h1>
+            <p>Experience luxurious beauty treatments designed to care for your skin and hair and reveal your natural glow.</p>
+            <a href="#services" class="explore-btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section class="intro">
+        <p class="section-tag">OUR SPECIALTIES</p>
+        <h2>Beauty Starts With <span>Self Care</span></h2>
+        <p>Discover our carefully selected treatments, where beauty meets relaxation and professional care.</p>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="section-heading">
+            <p class="section-tag">OUR TREATMENTS</p>
+            <h2>Explore Our Services</h2>
+            <p class="subtitle">Professional treatments designed for your beauty and confidence.</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All Services</button>
+            <button class="filter-btn" data-category="facial">Facial Care</button>
+            <button class="filter-btn" data-category="hair">Hair Care</button>
+            <button class="filter-btn" data-category="laser">Laser</button>
+            <button class="filter-btn" data-category="skin">Skin Treatments</button>
+        </div>
+
+        <div class="services-container">
+            <article class="service-card" data-category="facial">
+                <div class="image-container"><img src="images/facial.jpg" alt="Luxury Facial Treatment" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">FACIAL CARE</span>
+                    <h3>Luxury Facial Treatment</h3>
+                    <p>A relaxing facial experience to cleanse, refresh and nourish your skin.</p>
+                    <h4>$45 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Luxury Facial Treatment">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="facial">
+                <div class="image-container"><img src="images/hydrafacial.jpg" alt="Hydrafacial" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">FACIAL CARE</span>
+                    <h3>Hydrafacial</h3>
+                    <p>Deep cleansing and hydration for smooth, fresh and glowing skin.</p>
+                    <h4>$65 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Hydrafacial">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="facial">
+                <div class="image-container"><img src="images/glow-peel.jpg" alt="Glow and Brightening Peel" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">FACIAL CARE</span>
+                    <h3>Glow &amp; Brightening Peel</h3>
+                    <p>Gentle exfoliation and brightening mask to revive dull skin and restore a radiant complexion.</p>
+                    <h4>$75 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Glow &amp; Brightening Peel">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="hair">
+                <div class="image-container"><img src="images/hair-nourishment.jpg" alt="Hair Nourishment" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">HAIR CARE</span>
+                    <h3>Hair Nourishment</h3>
+                    <p>Nourishing treatments to improve hair softness, shine and overall appearance.</p>
+                    <h4>$55 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Hair Nourishment">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="hair">
+                <div class="image-container"><img src="images/hair-treatment.jpg" alt="Professional Hair Treatment" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">HAIR CARE</span>
+                    <h3>Professional Hair Treatment</h3>
+                    <p>Special hair care sessions designed to restore softness and vitality.</p>
+                    <h4>$60 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Professional Hair Treatment">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="hair">
+                <div class="image-container"><img src="images/hair-spa.jpg" alt="Luxury Hair Spa" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">HAIR CARE</span>
+                    <h3>Luxury Hair Spa</h3>
+                    <p>A relaxing scalp massage and deep conditioning for a beautiful hair care experience.</p>
+                    <h4>$70 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Luxury Hair Spa">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="hair">
+                <div class="image-container"><img src="images/hair-hydration.jpg" alt="Hair Hydration" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">HAIR CARE</span>
+                    <h3>Hair Hydration</h3>
+                    <p>A moisturizing experience to leave your hair feeling soft, smooth and refreshed.</p>
+                    <h4>$50 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Hair Hydration">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="laser">
+                <div class="image-container"><img src="images/laser-hair-removal.jpg" alt="Laser Hair Removal" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">LASER CARE</span>
+                    <h3>Laser Hair Removal</h3>
+                    <p>Professional laser sessions for smoother-looking skin in a comfortable clinic environment.</p>
+                    <h4>$80 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Laser Hair Removal">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="laser">
+                <div class="image-container"><img src="images/laser-care.jpg" alt="Advanced Laser Care" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">LASER CARE</span>
+                    <h3>Advanced Laser Care</h3>
+                    <p>Modern laser technology and professional care for personalized treatment sessions.</p>
+                    <h4>$90 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Advanced Laser Care">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="laser">
+                <div class="image-container"><img src="images/laser-resurfacing.jpg" alt="Laser Skin Resurfacing" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">LASER CARE</span>
+                    <h3>Laser Skin Resurfacing</h3>
+                    <p>Targeted laser therapy to refine skin texture, minimize pores and boost collagen production.</p>
+                    <h4>$95 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Laser Skin Resurfacing">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="skin">
+                <div class="image-container"><img src="images/skin-rejuvenation.jpg" alt="Skin Rejuvenation" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">SKIN CARE</span>
+                    <h3>Skin Rejuvenation</h3>
+                    <p>Refresh your skin and improve its natural appearance and glow.</p>
+                    <h4>$70 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Skin Rejuvenation">Book Appointment</button>
+                </div>
+            </article>
+
+            <article class="service-card" data-category="skin">
+                <div class="image-container"><img src="images/acne-treatment.jpg" alt="Acne and Blemish Treatment" loading="lazy"></div>
+                <div class="card-content">
+                    <span class="category-label">SKIN CARE</span>
+                    <h3>Acne &amp; Blemish Treatment</h3>
+                    <p>Targeted clinical skin therapy to clear acne, calm inflammation and restore smooth skin.</p>
+                    <h4>$65 <small>/ Session</small></h4>
+                    <button class="book-btn" data-service="Acne &amp; Blemish Treatment">Book Appointment</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="beauty-banner">
+        <p class="section-tag">YOUR BEAUTY JOURNEY</p>
+        <h2>Feel Beautiful. Feel Confident.</h2>
+        <p>Take time for yourself and enjoy a special beauty experience.</p>
+        <a href="booking.html" class="explore-btn">Book Your Visit</a>
+    </section>
+
+    <footer>
+        <h3>BEAUTY CLINIC</h3>
+        <p>Enhance Your Natural Beauty</p>
+        <p>© 2026 Beauty Clinic. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/services.js" defer></script>
+</body>
+</html>

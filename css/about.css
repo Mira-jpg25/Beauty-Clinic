@@ -1,0 +1,267 @@
+
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDF7F4;
+}
+
+
+/* Navbar */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAD8D0;
+    padding: 15px 50px;
+}
+
+.header h2 {
+    color: #554343;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #554343;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #D8A6A5;
+}
+
+.nav .login-btn {
+    background-color: #554343;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+
+/* About Hero */
+
+.about-hero {
+    background-color: #554343;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.about-hero p {
+    color: #EAD8D0;
+    font-size: 18px;
+}
+
+
+/* About Section */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 50px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    color: #554343;
+    font-size: 32px;
+}
+
+.about-content p {
+    color: #554343;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* Mission */
+
+.mission {
+    background-color: #EAD8D0;
+    text-align: center;
+    padding: 50px;
+}
+
+.mission h2 {
+    color: #554343;
+    font-size: 32px;
+}
+
+.mission p {
+    color: #554343;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Vision */
+
+.vision {
+    background-color: #FDF7F4;
+    text-align: center;
+    padding: 50px;
+}
+
+.vision h2 {
+    color: #554343;
+    font-size: 32px;
+}
+
+.vision p {
+    color: #554343;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Why Choose Us */
+
+.why-us {
+    background-color: #EAD8D0;
+    text-align: center;
+    padding: 60px 50px;
+}
+
+.why-us h2 {
+    color: #554343;
+    font-size: 32px;
+}
+
+.why-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.why-card {
+    background-color: #FDF7F4;
+    width: 30%;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+}
+
+.why-card h3 {
+    color: #554343;
+}
+
+.why-card p {
+    color: #554343;
+    line-height: 1.7;
+}
+
+
+/* Our Values */
+
+.values {
+    text-align: center;
+    padding: 50px;
+}
+
+.values h2 {
+    color: #554343;
+    font-size: 32px;
+}
+
+.values p {
+    color: #554343;
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #554343;
+    color: #FDF7F4;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h2 {
+    color: #D8A6A5;
+}
+
+.footer p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .why-cards {
+        flex-direction: column;
+    }
+
+    .why-card {
+        width: 100%;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+}

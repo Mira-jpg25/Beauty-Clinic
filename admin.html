@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beauty Clinic Admin</title>
+
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="booking.html">
+</head>
+
+<body>
+
+    
+
+    <div class="admin-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2>🌸 Beauty Clinic</h2>
+
+            <p>Admin Panel</p>
+
+            <a href="#dashboard">Dashboard</a>
+            <a href="#doctors">Manage Doctors</a>
+            <a href="#services">Manage Services</a>
+            <a href="#appointments">Appointments</a>
+
+            <a href="index.html">View Website</a>
+
+            <button onclick="logout()">Logout</button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="admin-main">
+
+            <header class="admin-header">
+
+                <div>
+                    <h1>Admin Dashboard</h1>
+                    <p>Welcome to Beauty Clinic Management</p>
+                </div>
+
+                <span>Administrator 👩‍💻</span>
+
+            </header>
+
+
+            <!-- Dashboard -->
+            <section id="dashboard">
+
+                <h2>Overview</h2>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <h3>Doctors</h3>
+                        <p id="doctorCount">0</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Services</h3>
+                        <p id="serviceCount">0</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Appointments</h3>
+                        <p id="appointmentCount">0</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Pending</h3>
+                        <p id="pendingCount">0</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Manage Doctors -->
+            <section class="admin-section" id="doctors">
+
+                <h2>Manage Doctors</h2>
+
+                <form id="doctorForm" class="admin-form">
+
+                    <input type="hidden" id="doctorId">
+
+                    <input
+                        type="text"
+                        id="doctorName"
+                        placeholder="Doctor Full Name"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="doctorSpecialty"
+                        placeholder="Doctor Specialty"
+                        required
+                    >
+
+                    <button type="submit" id="doctorSubmit">
+                        Add Doctor
+                    </button>
+
+                    <button type="button"
+                        class="cancel-btn"
+                        onclick="resetDoctorForm()">
+                        Cancel
+                    </button>
+
+                </form>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Doctor Name</th>
+                                <th>Specialty</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="doctorsTable"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- Manage Services -->
+            <section class="admin-section" id="services">
+
+                <h2>Manage Services</h2>
+
+                <form id="serviceForm" class="admin-form">
+
+                    <input type="hidden" id="serviceId">
+
+                    <input
+                        type="text"
+                        id="serviceName"
+                        placeholder="Service Name"
+                        required
+                    >
+
+                    <input
+                        type="number"
+                        id="servicePrice"
+                        placeholder="Service Price"
+                        min="1"
+                        required
+                    >
+
+                    <select id="serviceDoctor" required>
+                        <option value="">Choose Doctor</option>
+                    </select>
+
+                    <button type="submit" id="serviceSubmit">
+                        Add Service
+                    </button>
+
+                    <button type="button"
+                        class="cancel-btn"
+                        onclick="resetServiceForm()">
+                        Cancel
+                    </button>
+
+                </form>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Service</th>
+                                <th>Price</th>
+                                <th>Doctor</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="servicesTable"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- Manage Appointments -->
+            <section class="admin-section" id="appointments">
+
+                <h2>Manage Appointments</h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Client</th>
+                                <th>Phone</th>
+                                <th>Service</th>
+                                <th>Doctor</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="appointmentsTable"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <footer class="admin-footer">
+                Beauty Clinic Admin Panel © 2026
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

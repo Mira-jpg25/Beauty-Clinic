@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments - Beauty Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">🌸 Beauty Clinic</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="booking.html">Booking</a>
+            <a href="appointments.html" class="active">
+                My Appointments
+            </a>
+        </div>
+
+        <a href="booking.html" class="nav-btn">Book Now</a>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="appointments-header">
+
+        <div class="header-content">
+            <h1>My Appointments</h1>
+            <h2>Check Your Bookings</h2>
+            <p>View and manage your appointments easily.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Appointments Section -->
+    <section class="appointments-container">
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input type="email" id="searchEmail"
+                placeholder="Enter your email to find your bookings">
+
+            <button id="searchBtn" class="main-btn">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Table -->
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Service</th>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="appointmentsTable">
+
+                    <!-- JavaScript will add bookings here -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p id="appointmentsMessage" class="appointments-message">
+            Enter your email to view your appointments.
+        </p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
