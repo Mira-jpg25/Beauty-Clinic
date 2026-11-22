@@ -11,42 +11,20 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-<div class="container">
-<a class="navbar-brand" href="index.html"><i class="bi bi-flower1 me-1"></i> Beauty Clinic</a>
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-<li class="nav-item">
-    <a class="nav-link" href="index.html">Home</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="services.html">Services & Prices</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link active fw-semibold" href="doctors.html">Doctors</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="offers.html">Offers</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="contact.html">Contact</a>
-</li>
-<li class="nav-item">
-    <a class="btn-burg ms-lg-2" href="booking.html">Book Appointment</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="my-appointments.html">
-        <i class="bi bi-person">
-            
-        </i> My Account</a></li>
-        <button class="btn-burg ms-lg-2" id="openLogin" onclick="window.location.href='login.html'">Login</button>
-</ul>
-</div>
-</div>
-</nav>
+<header>
+    <div class="logo">BEAUTY<span>CLINIC</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services & Prices</a>
+        <a href="doctors.html" class="active">Doctors</a>
+        <a href="offers.html">Offers</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-btn">Book Appointment</a>
+        <a href="my-appointments.html" id="myAccountLink">My Account</a>
+        <a href="login.html" class="nav-btn" id="loginBtn">Login</a>
+        <a href="#" class="nav-btn" id="logoutBtn" style="display:none;">Logout</a>
+    </nav>
+</header>
 
 <section class="page-header">
 <div class="container">
@@ -85,10 +63,7 @@
 </div>
 
 <div class="row g-4" id="doctorsGrid">
-<div class="col-6 col-md-3 doctor-item" 
-data-specialty="dermatology"
- data-exp="12" 
- data-service="botox">
+<div class="col-6 col-md-3 doctor-item" data-specialty="dermatology" data-exp="12" data-service="botox">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr1.jpg" alt="Dr jouli">
@@ -102,17 +77,12 @@ data-specialty="dermatology"
         <span class="meta-item">From 2150</span>
     </div>
     <div class="rating">★★★★★ 4.9 (128)</div>
-    <button class="btn-book"
-     data-doctor="Dr. jouli johne"
-     data-service="Botox">Book with Dr. jouli</button>
+    <button class="btn-book" data-doctor="Dr. jouli johne" data-service="Botox">Book with Dr. jouli</button>
 </div>
 </div>
 </div>
 
-<div class="col-6 col-md-3 doctor-item"
- data-specialty="laser" 
- data-exp="10" 
- data-service="laser">
+<div class="col-6 col-md-3 doctor-item" data-specialty="laser" data-exp="10" data-service="laser">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr2.jpg">
@@ -126,16 +96,11 @@ data-specialty="dermatology"
         <span class="meta-item">From 1120</span>
     </div>
     <div class="rating">★★★★★ 4.8 (96)</div>
-    <button class="btn-book"
-     data-doctor="Dr. Ivan yousef"
-      data-service="Laser">Book with Dr. Ivan</button></div>
+    <button class="btn-book" data-doctor="Dr. Ivan yousef" data-service="Laser">Book with Dr. Ivan</button></div>
 </div>
 </div>
 
-<div class="col-6 col-md-3 doctor-item" 
-data-specialty="facials"
- data-exp="8"
-  data-service="hydrafacial">
+<div class="col-6 col-md-3 doctor-item" data-specialty="facials" data-exp="8" data-service="hydrafacial">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr4.jpg">
@@ -147,15 +112,10 @@ data-specialty="facials"
     <div class="doctor-meta"><span class="meta-item">HydraFacial</span>
         <span class="meta-item">From 1500</span>
     </div><div class="rating">★★★★★ 5.0 (142)</div>
-    <button class="btn-book"
-     data-doctor="Dr. Marina Ivanova"
-      data-service="HydraFacial">Book with Dr. Marina</button></div>
+    <button class="btn-book" data-doctor="Dr. Marina Ivanova" data-service="HydraFacial">Book with Dr. Marina</button></div>
 </div></div>
 
-<div class="col-6 col-md-3 doctor-item" 
-data-specialty="body"
- data-exp="9" 
- data-service="body">
+<div class="col-6 col-md-3 doctor-item" data-specialty="body" data-exp="9" data-service="body">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr3.jpg">
@@ -169,17 +129,12 @@ data-specialty="body"
 <span class="meta-item">From 2000</span>
 </div>
 <div class="rating">★★★★★ 4.9 (88)</div>
-<button class="btn-book"
- data-doctor="Dr. Manar Ahmad "
-  data-service="Body Contouring">Book with Dr. Manar</button>
+<button class="btn-book" data-doctor="Dr. Manar Ahmad " data-service="Body Contouring">Book with Dr. Manar</button>
 </div>
 </div>
 </div>
 
-<div class="col-6 col-md-3 doctor-item"
- data-specialty="facials"
-  data-exp="7" 
-  data-service="facials">
+<div class="col-6 col-md-3 doctor-item" data-specialty="facials" data-exp="7" data-service="facials">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr5.jpg">
@@ -193,17 +148,12 @@ data-specialty="body"
         <span class="meta-item">From 900</span>
     </div>
     <div class="rating">★★★★★ 4.7 (74)</div>
-    <button class="btn-book"
-     data-doctor="Dr. Yulia"
-      data-service="Facials">Book with Dr. Yulia</button>
+    <button class="btn-book" data-doctor="Dr. Yulia" data-service="Facials">Book with Dr. Yulia</button>
     </div>
 </div>
 </div>
 
-<div class="col-6 col-md-3 doctor-item" 
-data-specialty="botox"
- data-exp="15" 
- data-service="botox">
+<div class="col-6 col-md-3 doctor-item" data-specialty="botox" data-exp="15" data-service="botox">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr8.jpg">
@@ -217,15 +167,10 @@ data-specialty="botox"
         <span class="meta-item">From 2220</span>
     </div>
     <div class="rating">★★★★★ 5.0 (210)</div>
-    <button class="btn-book"
-     data-doctor="Dr. Alexander"
-      data-service="Botox">Book with Dr. Alexander</button></div>
+    <button class="btn-book" data-doctor="Dr. Alexander" data-service="Botox">Book with Dr. Alexander</button></div>
 </div></div>
 
-<div class="col-6 col-md-3 doctor-item" 
-data-specialty="dermatology"
- data-exp="6" 
- data-service="hydrafacial">
+<div class="col-6 col-md-3 doctor-item" data-specialty="dermatology" data-exp="6" data-service="hydrafacial">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr6.jpg">
@@ -239,17 +184,12 @@ data-specialty="dermatology"
         <span class="meta-item">From 1100</span>
     </div>
     <div class="rating">★★★★★ 4.8 (62)</div>
-    <button class="btn-book"
-     data-doctor="Dr. Anastasia"
-      data-service="Acne">Book with Dr. Anastasia</button>
+    <button class="btn-book" data-doctor="Dr. Anastasia" data-service="Acne">Book with Dr. Anastasia</button>
     </div>
 </div>
 </div>
 
-<div class="col-6 col-md-3 doctor-item"
- data-specialty="laser"
-  data-exp="11"
-   data-service="laser">
+<div class="col-6 col-md-3 doctor-item" data-specialty="laser" data-exp="11" data-service="laser">
 <div class="doctor-card">
 <div class="doctor-img">
     <img src="images/dr7.jpg">
@@ -262,9 +202,7 @@ data-specialty="dermatology"
         <span class="meta-item">Laser</span>
         <span class="meta-item">From 1300</span>
     </div><div class="rating">★★★★★ 4.9 (104)</div>
-    <button class="btn-book"
-     data-doctor="Dr. Svetlana"
-      data-service="Laser">Book with Dr. Svetlana</button>
+    <button class="btn-book" data-doctor="Dr. Svetlana" data-service="Laser">Book with Dr. Svetlana</button>
     </div>
 </div>
 </div>

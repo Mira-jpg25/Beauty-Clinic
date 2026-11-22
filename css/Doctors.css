@@ -1,4 +1,3 @@
-
 :root{
   --blush:#D8A6A5;
   --light:#EAD8D0; 
@@ -17,33 +16,51 @@ overflow-x:hidden
 h1,h2,h3{font-family:'Cormorant Garamond',serif;
     color:var(--burg)
 }
-.navbar{background:rgba(255,249,248,0.92);
-    backdrop-filter:blur(20px);
-    border-bottom:1px solid var(--blush);
-    padding:12px 0
+
+/* Header - Same as Services Page Exactly */
+header {
+    background: white;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-.navbar-brand{
-    font-family:'Cormorant Garamond';
-    font-weight:700;
-    font-size:26px;
-    color:var(--burg)!important
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #493b3b;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
 }
-.btn-burg{
-    background:var(--burg);
-    color:#fff;
-    border-radius:30px;
-    padding:10px 22px;
-    font-size:13px;
-    border:none;
-    transition:.3s;
-    text-decoration:none;
-    display:inline-block
+.logo span { color: #c47e85; }
+nav { display: flex; gap: 25px; align-items: center; }
+nav a {
+    text-decoration: none;
+    color: #493b3b;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: 'Arial', sans-serif;
 }
-.btn-burg:hover{
-    background:var(--burg2);
-    color:#fff;
-    transform:translateY(-1px)
+nav a:hover, nav a.active { color: #c47e85; }
+.nav-btn {
+    background: #493b3b;
+    color: white !important;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 13px;
+    display: inline-block;
 }
+.nav-btn:hover {
+    background: #965c64;
+    color: white !important;
+    transform: translateY(-1px);
+}
+
 .page-header{
     background:linear-gradient(135deg,#FDF7F4,#EAD8D0);
 padding:60px 0 30px;
@@ -85,7 +102,6 @@ border-bottom:1px solid var(--blush)
     border-bottom:1px solid var(--burg);
     font-weight:500
 }
-
 .filters{
     display:flex;
     gap:10px;
@@ -159,7 +175,6 @@ border-bottom:1px solid var(--blush)
     color:var(--burg);
     box-shadow:0 2px 10px rgba(0,0,0,0.06)
 }
-
 .doctor-info{
     padding:14px 10px 0
 }
@@ -217,6 +232,8 @@ border-bottom:1px solid var(--blush)
 }
 
 @media(max-width:768px){
+  header { flex-direction: column; gap: 20px; }
+  nav { flex-wrap: wrap; justify-content: center; gap: 15px; }
   .doctors-container{margin:0 12px 30px;
     padding:16px;
     border-radius:20px
